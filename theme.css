@@ -1,7 +1,35 @@
-//META{"name":"Kurisu BG","description":"Kurisu.","author":"Zedpai","version":"1.6"}*// {}
+//META{"name":"Kurisu BG","description":"Kurisu.","author":"Planta + Ruben7173","version":"1.6"}*// {}
 
-/* imports code and transparency module */
-@import url(https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency.css);
+/* background */
+.da-appMount {
+    background: var(--background-image);
+}
+/* setting transparency */
+.container-2lgZY8, .sidebar-2K8pFh, .activityFeed-1C0EmJ, .da-app .wrapper-1Rf91z, .channels-Ie2l6A, .container-PNkimc, .da-app .container-2Thooq, .da-app .chat-3bRxxu, .da-app .chat-3bRxxu form, .da-app .content-yTz4x3, .da-app .layer-3QrUeG, .da-app .layers-3iHuyZ, .da-app .title-3qD0b-, .da-app .headerBar-UHpsPw, .da-app .members-1998pB, .da-app .messagesWrapper-3lZDfY, .da-app #friends, .da-app .activityFeed-28jde9, .da-app .ui-standard-sidebar-view, .da-app .ui-standard-sidebar-view .content-region, .da-app .ui-standard-sidebar-view .sidebar-region, .da-app .noChannel-Z1DQK7, .da-app .gameLibrary-TTDw4Y, .da-app .applicationStore-1pNvnv, .da-app .container-3gCOGc, .da-app .root-1BQpZw, .theme-dark .gameLibrary-TTDw4Y {
+	background-color: var(--transparency-level);
+}
+.titleBar-AC4pGV {
+	background: var(--transparency-level-top);
+	margin-top: 0px;
+	padding-top: 4px;
+}
+/* fix on new update transparency of settings */
+.theme-dark .standardSidebarView-3F1I7i {
+    background-color: var(--transparency-settings);
+}
+
+/* removing backgrounds */
+.da-app .chat-3bRxxu form, .da-app .container-2Thooq, .panels-j1Uci_, .da-app .headerBar-UHpsPw, .da-app .messagesWrapper-3lZDfY, .da-app .members-1998pB, .da-app .inner-zqa7da, .da-app .typing-2GQL18, .da-app .wrapper-29NfPK, .search-bar, .da-app .markup-2BOw-j pre, .da-app .hljs, .da-app .markup-2BOw-j code, .da-app .markup-2BOw-j code.inline, .da-app .contentRegion-3nDuYy, .da-app .sidebarRegion-VFTUkN {
+	background: none;
+}
+
+/* fixes */
+.theme-dark {
+    --background-primary: none;
+    --background-secondary: none;
+    --background-tertiary: none;
+    --background-accent: none;
+}
 
 :root {               
 	/* background image URL */
@@ -131,19 +159,6 @@ html{
 }
 /* settings area */
 
-/* My account TAB */ /* Remove 2F2 and Remove Authentication background color */
-.lookOutlined-3sRXeN.colorRed-1TFJan {
-    border-color: rgba(240,71,71,.3);
-    color: #f04747;
-    background-color: rgba(0,0,0,0.2);
-}
-
-/* Profile box of my account and inside */
-.da-app .cardPrimary-1Hv-to, .theme-dark .cardPrimaryEditable-3KtE4g, .da-app .bda-slist li, .da-app .cardPrimaryOutline-29Ujqw {
-    background: rgba(105, 255, 255, 0.12);
-    border-color: rgba(105, 255, 255, 0.21);
-    background-color: rgba(105, 255, 255, 0.12);
-}
 
 /* buttons of my account and inside profile box and some bd buttons */ /* view backup codes and edit button normal state */
 .lookFilled-1Gx00P.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY, .da-app .questionMark-CWEQZn, .bd-pfbtn, .bda-slist .bda-footer button, .wrapper-2NJDcI {
@@ -200,57 +215,6 @@ input[type="text"].input-cIJ7To::-webkit-input-placeholder {
     border-color: rgb(46, 117, 46);
 }
 
-/* part of right click options and hover state and submenu background*/
-.theme-dark.contextMenu-HLZMGh, .theme-dark .select-2TCrqx .Select-menu-outer, .da-app .autocomplete-1vrmpx, .da-app .card-FDVird:before, .da-app .button-mM-y8i, .theme-dark .container-3ayLPN, .theme-dark .attachPopout-1n-ZKM {
-	background-color: rgba(46, 98, 55, 0.9);
-}
-.theme-dark .item-1Yvehc:hover, .da-app .selectorSelected-1_M1WV, .theme-dark .option-96V44q.selected-rZcOL-, .theme-dark .item-1GzJrl:hover, .theme-dark .attachPopoutRow-KrE-f6:hover {
-	background-color: rgba(155, 255, 255, 0.12);
-}
-.theme-dark .option-96V44q:after {
-    background: linear-gradient(90deg,rgba(54,57,63,0),rgba(35, 64, 40, 0.99) 80%);
-}
-.theme-dark .option-96V44q.selected-rZcOL-:after {
-    background: linear-gradient(90deg,rgba(35,38,42,0),rgba(35, 64, 40, 0.99) 50%);
-}
-/* submenu hover */
-.da-app .select-2TCrqx .Select-option.is-focused {
-    background: rgba(0,0,0,.3);
-}
-/*  */
-.da-app .select-2TCrqx .Select-control {
-	background-color: rgba(43, 99, 56, 0.6);
-}
-/* Bar fill filled area and background fill */
-.barFill-23-gu- {
-    background: rgba(34, 150, 61, 0.8);
-}
-.da-app .bar-2Qqk5Z {
-    background: rgba(48, 72, 42, 0.61);
-}
-/* checker box ON / OFF*/
-.themeDefault-24hCdX.valueChecked-m-4IJZ, #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {
-	background-color: rgba(29, 99, 41, 0.99);
-}
-.themeDefault-24hCdX, #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {
-    background-color: rgba(86, 123, 81, 0.6);
-}
-/* overlay notifications at settings overlay option background border selected hover area and disabled areas */
-.wrapper-3jrx9n {
-    background-color: rgba(20, 42, 23, 0.4);
-    border: 2px solid rgba(38, 88, 49, 0.9);
-}
-.selected-mKYnfr.option-n0icdO {
-	background-color: rgb(39, 113, 49);
-	box-shadow: 0 2px 0 rgba(34, 64, 37, 0.3);
-}
-.option-n0icdO:hover {
-    background-color: rgba(39, 113, 49, 0.7);
-}
-.option-n0icdO {
-    background-color: rgba(28, 255, 22, 0.13);
-}
-/**/
 
 /* mention channel normal state and hover */
 .da-app .wrapper-3WhCwL {
@@ -272,18 +236,6 @@ input[type="text"].input-cIJ7To::-webkit-input-placeholder {
 .da-app .fontScaleLarge-3xtq7i, .da-app .fontScaleSmall-368quy {
 	color: #8fb1a0;
 }
-
-/* checkbox background, check color and border */
-.da-app .checked-3_4uQ9 {
-	background-color: #459c5f;
-}
-.da-app .checked-3_4uQ9 svg[name="Checkmark"] polyline {
-	stroke: rgba(38, 88, 49, 0.9); stroke-width: 2;
-}
-.da-app .checked-3_4uQ9[style*="border-color: rgb(114, 137, 218);"] {
-	border-color: rgba(38, 88, 49, 0.9)!important;
-}
-/**/
 
 /* Privacy And Safety buttons */ /* RED */
 .da-app .cardPrimaryEditable-3KtE4g[style*="background-color: rgb(240, 71, 71);"] {
@@ -341,10 +293,6 @@ input[type="text"].input-cIJ7To::-webkit-input-placeholder {
 	border: 1px solid green;
 }
 
-/* no game detected */
-.da-app .user-settings-games .not-detected {
-    background-color: rgba(0,0,0,0.2);
-}
 
 /* hover games overlay background and X box background and box shadow */
 .da-app .button-mM-y8i {
@@ -518,40 +466,6 @@ input[type="text"].input-cIJ7To::-webkit-input-placeholder {
 .theme-dark .footerSub-1Jedbi {
     color: #61ca7d;
 }
-/* activity page */
-.article-3kb3qm {
-    background-color: rgb(25, 84, 41);
-}
-.paginationItem-2lUq0s:after {
-    background: linear-gradient(270deg,transparent 0,rgb(31, 53, 36));
-}
-
-.paginationItem-2lUq0s {
-	background: rgba(43, 94, 55, 0.8);
-}
-.paginationItem-2lUq0s:hover {
-    background: #206d35;
-}
-.da-app .body-SKIE6r {
-	background-color: transparent;
-}
-.da-app .playTime-1laRtO {
-    color: #a8b1b9;
-}
-.news-2GDtLJ {
-    background-color: rgb(25, 84, 41);
-}
-
-/* profile page */
-.theme-dark .topSectionNormal-2-vo2m {
-    background-color: rgba(80, 130, 130, 0.35);
-}
-.theme-dark .body-3ND3kc {
-    background-color: rgba(80, 130, 130, 0.25);
-}
-.da-app .userInfoSection-2acyCx+.userInfoSection-2acyCx {
-    border-color: #20561e;
-}
 
 .theme-dark .circleIconButton-jET_ig {
     color: #12522c;
@@ -628,3 +542,26 @@ input[type="text"].input-cIJ7To::-webkit-input-placeholder {
 .footer-1N3bR3 {background-color: rgba(80, 130, 130, 0.65);}
 .profileBanner-33-uE1.banner-2QYc2d {background-color: rgba(80, 130, 130, 0.65);}
 .activity-3v9l4T {background-color: rgba(80, 130, 130, 0.65);}
+
+
+/* part of right click options and hover state and submenu background*/
+.theme-dark.contextMenu-HLZMGh, .theme-dark .select-2TCrqx .Select-menu-outer, .da-app .autocomplete-1vrmpx, .da-app .card-FDVird:before, .da-app .button-mM-y8i, .theme-dark .container-3ayLPN, .theme-dark .attachPopout-1n-ZKM {
+	background-color: rgba(46, 98, 55, 0.9);
+}
+.theme-dark .item-1Yvehc:hover, .da-app .selectorSelected-1_M1WV, .theme-dark .option-96V44q.selected-rZcOL-, .theme-dark .item-1GzJrl:hover, .theme-dark .attachPopoutRow-KrE-f6:hover {
+	background-color: rgba(155, 255, 255, 0.12);
+}
+.theme-dark .option-96V44q:after {
+    background: linear-gradient(90deg,rgba(54,57,63,0),rgba(35, 64, 40, 0.99) 80%);
+}
+.theme-dark .option-96V44q.selected-rZcOL-:after {
+    background: linear-gradient(90deg,rgba(35,38,42,0),rgba(35, 64, 40, 0.99) 50%);
+}
+/* submenu hover */
+.da-app .select-2TCrqx .Select-option.is-focused {
+    background: rgba(0,0,0,.3);
+}
+/*  */
+.da-app .select-2TCrqx .Select-control {
+	background-color: rgba(43, 99, 56, 0.6);
+}
